@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact SS Electronics</title>
+
+  <!-- ✅ Font Awesome for icons -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* ✅ Header */
+    header {
+      background: white;
+      padding: 12px 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 16px;
+      flex-wrap: nowrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      font-size: 20px;
+      font-weight: 700;
+      color: #333;
+      gap: 8px;
+    }
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      background: linear-gradient(135deg, #4ECDC4, #44A08D);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18px;
+    }
+
+    /* Hamburger */
+    .menu-toggle {
+      display: none;
+      font-size: 26px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: #333;
+    }
+
+    /* Nav */
+    nav {
+      transition: max-height 0.3s ease;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 24px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      padding: 8px 0;
+      display: block;
+    }
+    nav a:hover {color: #4ECDC4;}
+
+    /* Header actions */
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .whatsapp-btn {
+      background: #25D366;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .whatsapp-btn:hover {background: #1ebe5d;}
+    .cart {
+      position: relative;
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: #f5f5f5;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .cart i {color: #555;}
+    .cart-count {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      background: #FF6B35;
+      color: white;
+      border-radius: 50%;
+      font-size: 12px;
+      width: 18px;
+      height: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ✅ Mobile Styles (fix overlapping issue) */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-wrap: wrap; /* allow wrapping */
+      }
+
+      .logo {
+        flex: 1;
+      }
+
+      .menu-toggle {
+        display: block;
+        order: 2; /* keep hamburger on right */
+      }
+
+      nav {
+        position: absolute;
+        top: 64px;
+        left: 0;
+        width: 100%;
+        background: white;
+        overflow: hidden;
+        max-height: 0;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      }
+      nav.active {max-height: 300px;}
+      nav ul {flex-direction: column; gap: 0;}
+      nav li {border-bottom: 1px solid #eee;}
+      nav a {padding: 14px;}
+
+      .header-actions {
+        order: 3; /* move below logo & menu */
+        width: 100%;
+        justify-content: flex-start;
+        margin-top: 10px;
+      }
+
+      .whatsapp-btn {
+        padding: 8px 12px;
+        font-size: 13px;
+      }
+    }
+
+    /* ✅ Page Container */
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+    .header {text-align: center; margin-bottom: 60px;}
+    .header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    .header p {font-size: 1.1rem; color: #6c757d;}
+
+    .contact-content {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+    .store-info,
+    .contact-form {
+      background: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+    .store-info h2,
+    .contact-form h2 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 30px;
+    }
+
+    /* ✅ Form */
+    .form-group {margin-bottom: 25px;}
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 8px;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 15px;
+      border: 2px solid #e9ecef;
+      border-radius: 8px;
+      font-size: 1rem;
+      background-color: #f8f9fa;
+      transition: border-color 0.3s ease;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #17a2b8;
+      background: white;
+    }
+    .form-group textarea {height: 120px; resize: vertical;}
+
+    .submit-btn {
+      width: 100%;
+      background: #fd7e14;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .submit-btn:hover {
+      background: #e8590c;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 15px rgba(253,126,20,0.3);
+    }
+
+    @media (max-width: 768px) {
+      .contact-content {grid-template-columns: 1fr; gap: 40px;}
+      .container {padding: 40px 15px;}
+      .store-info, .contact-form {padding: 30px 20px;}
+      .header h1 {font-size: 2rem;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ✅ Header -->
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <div class="logo-icon"><i class="fa-solid fa-camera"></i></div>
+        SS Electronics
+      </div>
+
+      <!-- Hamburger -->
+      <button class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lens.html">Lens</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/917400352217" class="whatsapp-btn" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat
+        </a>
+        <div class="cart">
+          <i class="fa-solid fa-cart-shopping"></i>
+          <div class="cart-count" style="display:none;">0</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ✅ Page Content -->
+  <div class="container">
+    <div class="header">
+      <h1>Contact SS Electronics</h1>
+      <p>Visit our store or get in touch for the best camera deals in Mumbai</p>
+    </div>
+
+    <div class="contact-content">
+      <!-- Store info -->
+      <div class="store-info">
+        <h2>Visit Our Store</h2>
+        <p><b>Address:</b> Shop No. 19, 1st Floor, Gokul Kalyan Building, Mk Amin Marg, Fort, Mumbai – 400001</p>
+        <p><b>Phone:</b> +91 74003 52217</p>
+        <p><b>Email:</b> info@sselectronicsad.com</p>
+        <p><b>Working Hours:</b> Mon – Sat, 10:00 AM – 8:00 PM</p>
+      </div>
+
+          <!-- Contact Form -->
+        <div class="contact-container">
+          <h2>Let's Get In Touch</h2>
+          <form action="https://formsubmit.co/sufiyan.shaikh8369@gmail.com" method="POST" class="contact-form">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://altamash-raza-developer.netlify.app/">
+            <input type="hidden" name="_subject" value="New Contact Form Submission">
+               <input type="text" name="_honey" style="display:none">
+
+            <input type="text" name="name" placeholder="Full Name" required>
+
+            <div class="form-row">
+              <input type="email" name="email" placeholder="Email" required>
+              <input type="tel" name="phone" placeholder="Phone">
+                  </div>
+
+            <textarea name="message" placeholder="Message" rows="4" required></textarea>
+
+            <button type="submit" class="submit-btn">→</button>
+            </form>
+        </div>
+    </div>
+  </div>
+
+  <script>
+    /* ✅ Toggle mobile menu */
+    function toggleMenu() {
+      const nav = document.querySelector('nav');
+      const icon = document.querySelector('.menu-toggle i');
+      nav.classList.toggle('active');
+      icon.classList.toggle('fa-bars');
+      icon.classList.toggle('fa-times');
+    }
+
+    /* ✅ Contact form simple handler */
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      alert("Thank you! Your message has been sent.");
+      this.reset();
+    });
+  </script>
+</body>
+</html>

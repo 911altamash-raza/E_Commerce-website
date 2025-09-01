@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SS Electronics - Canon, Nikon, Sony Cameras & Lenses</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="lens.css">
+
+    <style>
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <div class="logo-icon">📷</div>
+                SS Electronics
+            </div>
+
+            <!-- Hamburger -->
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="lens.html">Lens</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Chat
+                </a>
+                <div class="cart" onclick="openCart()">
+                    <div class="cart-count" style="display: none;">0</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="hero loading">
+                <h1>Explore Canon, Nikon, Sony. New & Second-Hand Cameras & Lenses.</h1>
+                <p>All models available - from entry-level to professional cameras</p>
+            </section>
+
+            <section class="product-section loading">
+                <div class="section-header">
+                    <i class="fas fa-camera"></i>
+                    <h2>Canon DSLR</h2>
+                </div>
+                <p class="section-subtitle">Canon DSLR cameras - all models available</p>
+
+                <div class="product-grid">
+                    <div class="product-card loading" data-product="canon-1200d">
+                        <div class="product-badge very-good">Very Good</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/a6/cf/ee/a6cfeefecc79f816778b4c90ca558c99.jpg" alt="Canon EOS 1200D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon EOS 1200D DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(89)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-3000d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/35/2c/be/352cbe3b1ec060e2d1919e2e5ba4235c.jpg" alt="Canon EOS 3000D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon EOS 3000D DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(156)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-600d">
+                        <div class="product-badge like-new">Like New</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/d5/90/c2/d590c2629a41a81f757000eeb6828414.jpg" alt="Canon EOS 600D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon EOS 600D DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(234)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-700d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/69/63/b6/6963b6f73ab6d2a7e8dad075bc72a194.jpg" alt="Canon EOS 700D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon EOS 700D DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(178)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-5d-mark3">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/2b/ca/79/2bca79a568bead531876077f4f86f36d.jpg" alt="Canon EOS 5D Mark III" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon EOS 5D Mark III DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(345)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-5d-mark4">
+                        <div class="product-badge like-new">Like New</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://cdn.media.amplience.net/i/canon/eos_5d_mark_iv-beauty_1bd06bcadaee4833af6460c87898d249?$70-30-header-4by3-dt-jpg$" alt="Canon EOS 5D Mark IV" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon EOS 5D Mark IV DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(267)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <main>
+        <div class="container">
+            <section class="hero loading">
+                
+            </section>
+
+            <section class="product-section loading">
+                <div class="section-header">
+                    <i class="fas fa-camera"></i>
+                    <h2>Nikon DSLR</h2>
+                </div>
+                <p class="section-subtitle">Nikon DSLR cameras - professional quality</p>
+
+                <div class="product-grid">
+                    <div class="product-card loading" data-product="canon-1200d">
+                        <div class="product-badge very-good">Very Good</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/4a/2f/84/4a2f841114f97641a14c1f7880a9cf13.jpg" alt="Canon EOS 1200D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nikon D3100 DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(89)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-3000d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/cf/53/84/cf538461cefb2a02bbbab2193bca439d.jpg" alt="Canon EOS 3000D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nikon D3300 DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(156)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-600d">
+                        <div class="product-badge like-new">Like New</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/93/bd/1f/93bd1fc7f8c074a208fb384eb1289069.jpg" alt="Canon EOS 600D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nikon D5300 DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(234)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-700d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/c7/0b/b2/c70bb27fb5dc57c1a8b507a32c86793a.jpg" alt="Canon EOS 700D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nikon D7200 DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(178)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-5d-mark3">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/a9/80/97/a98097a53aad5ed045ba291e97c9ad06.jpg" alt="Canon EOS 5D Mark III" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nikon D7500 DSLR Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(345)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <main>
+        <div class="container">
+            <section class="hero loading">
+
+            </section>
+
+            <section class="product-section loading">
+                <div class="section-header">
+                    <i class="fas fa-camera"></i>
+                    <h2>Sony Mirrorless</h2>
+                </div>
+                <p class="section-subtitle">Sony mirrorless and compact cameras</p>
+
+                <div class="product-grid">
+                    <div class="product-card loading" data-product="canon-1200d">
+                        <div class="product-badge very-good">Very Good</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/ae/92/69/ae9269c0cb5d45cc2210ca7ec39784ed.jpg" alt="Canon EOS 1200D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony Alpha a6000 Mirrorless Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(89)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-3000d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/07/e4/00/07e400e1f63c3d03055464e7958a1293.jpg" alt="Canon EOS 3000D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony Alpha a6400 Mirrorless Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(156)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-600d">
+                        <div class="product-badge like-new">Like New</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/18/b3/a8/18b3a84facc59f4e5e84943490724117.jpg" alt="Canon EOS 600D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony Alpha A7 III Mirrorless Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(234)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-700d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/af/3c/41/af3c4147bb638f923f7a263c8da1e402.jpg" alt="Canon EOS 700D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony Alpha A7 IV Mirrorless Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(178)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-5d-mark3">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/e3/ab/fd/e3abfd29d8aedb7da4a44b4cae961c5d.jpg" alt="Canon EOS 5D Mark III" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Sony RX100 IV Compact Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(345)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                                <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <main>
+        <div class="container">
+            <section class="hero loading">
+
+            </section>
+
+            <section class="product-section loading">
+                <div class="section-header">
+                    <i class="fas fa-camera"></i>
+                    <h2>Point & Shoot Cameras</h2>
+                </div>
+                <p class="section-subtitle">Easy-to-use compact cameras for everyday photography</p>
+
+                <div class="product-grid">
+                    <div class="product-card loading" data-product="canon-1200d">
+                        <div class="product-badge very-good">Very Good</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/85/5b/97/855b97dc15528d8c247216270519b027.jpg" alt="Canon EOS 1200D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Canon PowerShot G7X Mark III Digital Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(89)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-3000d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://3.img-dpreview.com/files/p/E~TC4x3S590x0~articles/6689274884/Nikon_Coolpix_P950_review_02.jpeg" alt="Canon EOS 3000D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nikon COOLPIX P950 Digital Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(156)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <main>
+        <div class="container">
+            <section class="hero loading">
+
+            </section>
+
+            <section class="product-section loading">
+                <div class="section-header">
+                    <i class="fas fa-camera"></i>
+                    <h2>Vintage/Film Cameras</h2>
+                </div>
+                <p class="section-subtitle">Classic film cameras with second-hand options</p>
+
+                <div class="product-grid">
+                    <div class="product-card loading" data-product="canon-1200d">
+                        <div class="product-badge very-good">Very Good</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/1200x/e0/27/63/e027636a38b12fe312935730c1ed97fc.jpg" alt="Canon EOS 1200D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Vintage Canon AE-1 35mm Film Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(89)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product-card loading" data-product="canon-3000d">
+                        <div class="product-badge excellent">Excellent</div>
+                        <div class="favorite-icon" onclick="toggleFavorite(this)">
+                            <i class="far fa-heart"></i>
+                        </div>
+                        <div class="product-image">
+                            <img src="https://i.pinimg.com/736x/55/a1/c8/55a1c89348fea3cf2159a7fdeb999718.jpg" alt="Canon EOS 3000D" loading="lazy">
+                        </div>
+                        <div class="product-info">
+                            <h3>Nikon FM2 35mm Film Camera</h3>
+                            <div class="rating">
+                                <div class="stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <span class="reviews">(156)</span>
+                            </div>
+                            <div class="features">
+                                <span><i class="fas fa-shield-alt"></i> Secure Checkout</span>
+                                <span><i class="fas fa-shipping-fast"></i> Free Shipping</span>
+                            </div>
+                            <div class="product-actions">
+                               <!-- Shop Now Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20am%20interested%20in%20shopping." target="_blank">
+                                    <button class="btn-primary">Shop Now</button>
+                                  </a>
+
+                                  <!-- Book or Repair Button -->
+                                  <a href="https://wa.me/917400352217?text=Hi%2C%20I%20want%20to%20book%20or%20repair%20a%20product." target="_blank">
+                                    <button class="btn-secondary">Book or Repair</button>
+                                  </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Cart Modal -->
+    <div class="cart-modal">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" onclick="closeCart()">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div> 
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span>₹0.00</span>
+            </div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div class="overlay" onclick="closeCart()"></div>
+
+    <!-- Notification -->
+    <div class="notification" id="notification"></div>
+
+<script src="lens.js"></script>
+
+</body>
+</html>
